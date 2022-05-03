@@ -27,7 +27,7 @@ export const Navigation = () => {
                     id='bs-example-navbar-collapse-1'>
                     <ul className='nav navbar-nav navbar-right'>
                         <li>
-                            <a href='#home' className='page-scroll'>
+                            <a href='#header' className='page-scroll'>
                                 Home
                             </a>
                         </li>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {HomeData} from '../data/homeData';
+import {HomeData} from '../data/data';
 
 
 export const Home = (data: HomeData) => {
