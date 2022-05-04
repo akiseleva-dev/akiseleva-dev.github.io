@@ -15,7 +15,11 @@ export const About = (data: AboutData) => {
                                 <h1>About Me</h1>
                                 <h3>{data ? data.paragraph : "loading..."}</h3>
                             </div>
-                            <h3>Why Choose Us?</h3>
+                            <ul className="about-switcher">
+                                <a><h4>Main skills</h4></a>
+                                <a><h4>Experience</h4></a>
+                                <a><h4>Education & Certification</h4></a>
+                            </ul>
                             <div className="list-style">
                                 <div className="col-lg-6 col-sm-6 col-xs-12">
                                     <ul>

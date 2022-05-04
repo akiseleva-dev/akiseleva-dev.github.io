@@ -9,9 +9,14 @@ export const ProjectCard = (data: ProjectCardData) => {
                     href={data.largeImage}
                     title={data.title}
                     data-lightbox-gallery='gallery1'
+                    className="portfolio-item-link"
                 >
                     <div className='hover-text'>
+                        <h3>Development</h3>
                         <h4>{data.title}</h4>
+                        <button type='button' className='btn btn-custom btn-lg'>
+                            View details
+                        </button>
                     </div>
                     <img
                         src={data.smallImage}

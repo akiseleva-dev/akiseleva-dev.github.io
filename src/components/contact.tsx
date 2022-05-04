@@ -22,7 +22,7 @@ export const Contact = (data: ContactData) => {
         console.log(name, email, message)
         emailjs
             .sendForm(
-                'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+                'service_ng6gx4i', 'template_5yfp45b', e.target, '3HW5brYBfJ4yBqdhd'
             )
             .then(
                 (result) => {
@@ -41,9 +41,9 @@ export const Contact = (data: ContactData) => {
                     <div className='col-md-8'>
                         <div className='row'>
                             <div className='section-title'>
-                                <h2>Get In Touch</h2>
+                                <h1>Get In Touch</h1>
                                 <p>
-                                    Please fill out the form below to send us an email and we will
+                                    Please fill out the form below to send me an email and I will
                                     get back to you as soon as possible.
                                 </p>
                             </div>
@@ -80,7 +80,6 @@ export const Contact = (data: ContactData) => {
                                 </div>
                                 <div className='form-group'>
                   <textarea name='message' id='message' className='form-control'
-    // rows=4
                       placeholder='Message' required onChange={handleChange} />
                                     <p className='help-block text-danger'></p>
                                 </div>
@@ -146,10 +145,7 @@ export const Contact = (data: ContactData) => {
             <div id='footer'>
                 <div className='container text-center'>
                     <p>
-                        &copy; 2022 Issaaf Kattan React Land Page Template. Design by{' '}
-                        <a href='http://www.templatewire.com' rel='nofollow'>
-                            TemplateWire
-                        </a>
+                        &copy; 2022
                     </p>
                 </div>
             </div>
