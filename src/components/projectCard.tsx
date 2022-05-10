@@ -1,20 +1,23 @@
 import {ProjectCardData} from "../data/projectCardData";
+import {FC, HTMLAttributes} from "react";
 
-export const ProjectCard = (data: ProjectCardData) => {
+interface Props extends HTMLAttributes<HTMLDivElement> {
+    data: ProjectCardData;
+    onClick: () => void;
+}
+
+export const ProjectCard: FC<Props> = ({ data, className, onClick, ...rest }) => {
+    const classes = `portfolio-item ${className}`;
+
     return (
-        <div className='portfolio-item'>
+        <div {...rest} className={classes}>
             <div className='hover-bg'>
                 {' '}
-                <a
-                    href={data.largeImage}
-                    title={data.title}
-                    data-lightbox-gallery='gallery1'
-                    className="portfolio-item-link"
-                >
+                <div className="portfolio-item-link">
                     <div className='hover-text'>
                         <h3>Development</h3>
                         <h4>{data.title}</h4>
-                        <button type='button' className='btn btn-custom btn-lg'>
+                        <button onClick={onClick} type='button' className='btn btn-custom btn-lg'>
                             View details
                         </button>
                     </div>
@@ -23,7 +26,7 @@ export const ProjectCard = (data: ProjectCardData) => {
                         className='img-responsive'
                         alt={data.title}
                     />{' '}
-                </a>{' '}
+                </div>{' '}
             </div>
         </div>
     )

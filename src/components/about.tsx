@@ -7,7 +7,7 @@ export const About = (data: AboutData) => {
                 <div className="row">
                     <div className="col-xs-12 col-md-6">
                         {" "}
-                        <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
+                        <img src="img/about.jpg" className="img-responsive" alt=""/>{" "}
                     </div>
                     <div className="col-xs-12 col-md-6">
                         <div className="about-text">
@@ -15,22 +15,28 @@ export const About = (data: AboutData) => {
                                 <h1>About Me</h1>
                                 <h3>{data ? data.paragraph : "loading..."}</h3>
                             </div>
-                            <ul className="about-switcher">
-                                <a><h4>Main skills</h4></a>
-                                <a><h4>Experience</h4></a>
-                                <a><h4>Education & Certification</h4></a>
-                            </ul>
-                            <div className="list-style">
-                                <div className="col-lg-6 col-sm-6 col-xs-12">
-                                    <ul>
-                                        {"loading"}
-                                    </ul>
-                                </div>
-                                <div className="col-lg-6 col-sm-6 col-xs-12">
-                                    <ul>
-                                        {"loading"}
-                                    </ul>
-                                </div>
+                            <input id="skills" name="about" type="radio" className="about-radio"></input>
+                            <input id="exp" name="about" type="radio" className="about-radio"></input>
+                            <input id="education" name="about" type="radio" className="about-radio"></input>
+                            <div className="about-switcher">
+                                <label htmlFor="skills" className="about-tab">
+                                    <h4>Main skills</h4>
+                                </label>
+                                <label htmlFor="exp" className="about-tab">
+                                    <h4>Experience</h4>
+                                </label>
+                                <label htmlFor="education" className="about-tab">
+                                    <h4>Education & Certification</h4>
+                                </label>
+                            </div>
+                            <div className="about-details about-details-skills">
+                                Skills
+                            </div>
+                            <div className="about-details about-details-exp">
+                                Exp
+                            </div>
+                            <div className="about-details about-details-education">
+                                Education
                             </div>
                         </div>
                     </div>
