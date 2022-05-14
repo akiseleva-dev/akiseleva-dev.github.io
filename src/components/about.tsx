@@ -15,7 +15,7 @@ export const About = (data: AboutData) => {
                                 <h1>About Me</h1>
                                 <h3>{data ? data.paragraph : "loading..."}</h3>
                             </div>
-                            <input id="skills" name="about" type="radio" className="about-radio"></input>
+                            <input id="skills" name="about" type="radio" className="about-radio" defaultChecked></input>
                             <input id="exp" name="about" type="radio" className="about-radio"></input>
                             <input id="education" name="about" type="radio" className="about-radio"></input>
                             <div className="about-switcher">
@@ -30,13 +30,39 @@ export const About = (data: AboutData) => {
                                 </label>
                             </div>
                             <div className="about-details about-details-skills">
-                                Skills
+                                <ul>
+                                    <li>Java Development</li>
+                                    <li>Scala Development</li>
+                                    <li>Spring Experience (Spring Boot, Spring Security, Spring JPA)</li>
+                                    <li>ORM Database (MySQL, Postgres, Oracle)</li>
+                                    <li>CI/CD (Jenkins, Docker, AWS)</li>
+                                    <li>English - Low Intermediate</li>
+                                </ul>
                             </div>
                             <div className="about-details about-details-exp">
-                                Exp
+                                <ul>
+                                    <li>Middle Software Engineer - Lineate
+                                        <h5>May 2021 - nowadays</h5>
+                                    </li>
+                                    <li>Junior Software Engineer - Lineate
+                                        <h5>Aug 2020 - Apr 2021</h5>
+                                    </li>
+                                    <li>Trainee - Lineate
+                                        <h5>Feb 2020 - Jul 2020</h5>
+                                    </li>
+                                </ul>
                             </div>
                             <div className="about-details about-details-education">
-                                Education
+                                <ul>
+                                    <li>Master's degree, Applied Mathematics
+                                        <h5>Omsk State University</h5>
+                                        <h6>2021 - nowadays</h6>
+                                    </li>
+                                    <li>Bachelor's degree, Applied Mathematics and Computer Science
+                                        <h5>Omsk State University</h5>
+                                        <h6>2017 - 2021</h6>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

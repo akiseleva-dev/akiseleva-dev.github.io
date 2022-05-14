@@ -16,7 +16,7 @@ export const ProjectCard: FC<Props> = ({ data, className, onClick, ...rest }) =>
                 <div className="portfolio-item-link">
                     <div className='hover-text'>
                         <h3>Development</h3>
-                        <h4>{data.title}</h4>
+                        <h4>{data.shortTitle}</h4>
                         <button onClick={onClick} type='button' className='btn btn-custom btn-lg'>
                             View details
                         </button>

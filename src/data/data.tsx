@@ -4,9 +4,8 @@ export class HomeData {
 }
 
 export class AboutData {
-    paragraph = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered" +
-        "alteration in some form, by injected humour, or randomised words which dont look even slightly believable." +
-        "If you are going to use a passage of Lorem Ipsum,"
+    paragraph = "I am a software engineer, java developer. I have been in IT for 2.5 years (commercial experience 2 years). " +
+        "Assiduity, persistence, the ability to take responsibility and desire to learn helps me in the sphere of knowledge related to programming."
 }
 
 export class ContactData {

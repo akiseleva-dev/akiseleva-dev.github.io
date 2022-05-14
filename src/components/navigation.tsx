@@ -17,9 +17,6 @@ export const Navigation = () => {
                         <span className='icon-bar'/>{' '}
                         <span className='icon-bar'/>{' '}
                     </button>
-                    <a className='navbar-brand page-scroll' href='#page-top'>
-                        React Landing Page
-                    </a>{' '}
                 </div>
 
                 <div

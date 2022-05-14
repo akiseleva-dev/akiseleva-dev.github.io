@@ -1,6 +1,6 @@
 import {ProjectCardData} from "../data/projectCardData";
 import {ProjectCard} from "./projectCard";
-import {FC, useState} from "react";
+import React, {FC, useState} from "react";
 
 interface Props {
     data: Array<ProjectCardData>;
@@ -19,8 +19,7 @@ export const Portfolio: FC<Props> = ({data}) => {
                 <div className='section-title'>
                     <h1>My Latest Projects</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-                        dapibus leonec.
+                        Below are commercial projects in which I took part as a developer. For details, click "View Details".
                     </p>
                 </div>
                 <div className='portfolio-items'>
@@ -47,9 +46,7 @@ export const Portfolio: FC<Props> = ({data}) => {
                             <h3>
                                 {project.title}
                             </h3>
-                            <p>
-                                {project.text}
-                            </p>
+                            <p dangerouslySetInnerHTML={{__html: project.text}}/>
                         </div>
                     </div>
                 </div>
