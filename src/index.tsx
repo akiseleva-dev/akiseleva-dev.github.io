@@ -10,17 +10,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
-      <script type="text/javascript">
-          var vglnk = {key: '2336917d462fc5c205591ac50ae95652'};
-          (function(d, t) {
-          var s = d.createElement(t);
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = '//cdn.viglink.com/api/vglnk.js';
-          var r = d.getElementsByTagName(t)[0];
-          r.parentNode.insertBefore(s, r);
-      }(document, 'script'));
-      </script>
   </React.StrictMode>
 );
 
