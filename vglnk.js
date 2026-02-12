@@ -2752,7 +2752,7 @@
                     platform: a.platforms.NONE.id,
                     reaffiliate: !1,
                     sub_id: null,
-                    sync_url: "https://api.viglink.com/api",
+                    sync_url: "https://api.qa.viglink.com/api",
                     whitelist: !1,
                     blacklist_domains: null,
                     commercial_domains: null,
