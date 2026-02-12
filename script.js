@@ -1,5 +1,4 @@
-<script title="pxsnpt">
-    var lijitData = {
+ var lijitData = {
     cdmn: 'pxdrop.lijit.com',
     lm: 'd',
     tt: 't.dhj'
@@ -46,4 +45,3 @@
     d.body.appendChild(s);
 }
     _pxTagInject(lijitData, document, window, 'location');
-</script>
