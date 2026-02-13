@@ -2752,7 +2752,7 @@
                     platform: a.platforms.NONE.id,
                     reaffiliate: !1,
                     sub_id: null,
-                    sync_url: "https://api.qa.viglink.com/api",
+                    sync_url: "https://api.viglink.com/api",
                     whitelist: !1,
                     blacklist_domains: null,
                     commercial_domains: null,
@@ -4222,7 +4222,8 @@ window.vglnk.partners_plugin = function(k, a, n) {
                             key: n.opt("key"),
                             gdprApplies: a.consent().gdprApplies,
                             gdprConsent: a.consent().gdprConsent,
-                            ccpaConsent: a.consent().ccpaConsent
+                            ccpaConsent: a.consent().ccpaConsent,
+                            enableScript: 'true'
                         },
                         "pixel" === u ? b = "/api/sync.gif" : (z = "script",
                             b = "/api/sync.js");
