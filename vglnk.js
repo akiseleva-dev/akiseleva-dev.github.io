@@ -2739,7 +2739,7 @@
                 this.initLegacyOptions();
                 g = a.extend(this.publicOptions({
                     anywhere_url: "https://redirect.viglink.com",
-                    api_url: "https://api.qa.viglink.com/api",
+                    api_url: "https://api.viglink.com/api",
                     asset_url: "https://cdn.viglink.com/api",
                     cuid: null,
                     data_observer: !1,
